@@ -1,0 +1,36 @@
+﻿<dx:DXWindow
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+        xmlns:dxb="http://schemas.devexpress.com/winfx/2008/xaml/bars"
+        xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors" x:Class="Gradient_Descent_for_multiple_variables.MainWindow"
+        Title="Gradient Descent" Height="605.118" Width="637.685" Loaded="DXWindow_Loaded">
+    <Grid>
+        <dxe:ListBoxEdit Name="XList" HorizontalAlignment="Left" Height="135" Margin="213,100,0,0" VerticalAlignment="Top" Width="177" IsTabStop="False"/>
+        <dxe:ListBoxEdit Name="YList" HorizontalAlignment="Left" Height="135" Margin="411,100,0,0" VerticalAlignment="Top" Width="123" IsTabStop="False"/>
+        <dxe:TextEdit Name="TotalTextEdit" HorizontalAlignment="Left" Margin="477,24,0,0" VerticalAlignment="Top" Width="60" EditValueChanging="TotalTextEdit_EditValueChanging" TabIndex="3" EditValueChanged="TotalTextEdit_EditValueChanged"/>
+        <dxe:TextEdit Name="XTextEdit" IsEnabled="False" HorizontalAlignment="Left" Margin="268,240,0,0" VerticalAlignment="Top" Width="122" KeyDown="XTextEdit_KeyDown" TabIndex="5"/>
+        <dxe:TextEdit Name="YTextEdit" IsEnabled="False" HorizontalAlignment="Left" Margin="459,240,0,0" VerticalAlignment="Top" Width="75" KeyDown="YTextEdit_KeyDown" TabIndex="6"/>
+        <dxe:TextEdit x:Name="AlphaTextEdit" HorizontalAlignment="Left" Margin="99,24,0,0" VerticalAlignment="Top" Width="60" TabIndex="1" EditValueChanged="AlphaTextEdit_EditValueChanged" />
+        <Label Content="α: " HorizontalAlignment="Left" Margin="71,24,0,0" VerticalAlignment="Top"/>
+        <Label Content="No. of training examples(m): " HorizontalAlignment="Left" Margin="314,24,0,0" VerticalAlignment="Top"/>
+        <Label Content="Values of X: " HorizontalAlignment="Left" Margin="213,74,0,0" VerticalAlignment="Top"/>
+        <Label Content="Values of Y: " HorizontalAlignment="Left" Margin="404,74,0,0" VerticalAlignment="Top"/>
+        <dxe:TextEdit x:Name="NTextEdit" HorizontalAlignment="Left" Margin="223,24,0,0" VerticalAlignment="Top" Width="60" TabIndex="2" EditValueChanged="NTextEdit_EditValueChanged" />
+        <Label Content="N: " HorizontalAlignment="Left" Margin="193,24,0,0" VerticalAlignment="Top"/>
+        <Label Content="Enter X: " HorizontalAlignment="Left" Margin="209,240,0,0" VerticalAlignment="Top"/>
+        <Label Content="Enter Y: " HorizontalAlignment="Left" Margin="407,239,0,0" VerticalAlignment="Top"/>
+        <dxe:ListBoxEdit x:Name="ThetasList" HorizontalAlignment="Left" Height="135" Margin="72,99,0,0" VerticalAlignment="Top" Width="123" IsTabStop="False"/>
+        <dxe:TextEdit x:Name="ThetaTextEdit" IsEnabled="False" HorizontalAlignment="Left" Margin="120,239,0,0" VerticalAlignment="Top" Width="75" TabIndex="4" KeyDown="ThetaTextEdit_KeyDown"/>
+        <Label Content="Values of θs: " HorizontalAlignment="Left" Margin="72,73,0,0" VerticalAlignment="Top"/>
+        <Label Content="θ(0): " Name="ThetaLabel" HorizontalAlignment="Left" Margin="68,239,0,0" VerticalAlignment="Top"/>
+        <dxe:ListBoxEdit x:Name="CalculatedList" HorizontalAlignment="Left" Height="181" Margin="72,312,0,0" VerticalAlignment="Top" Width="123" IsTabStop="False"/>
+        <Button x:Name="CalculateButton" Content="Calculate" HorizontalAlignment="Left" Margin="462,271,0,0" VerticalAlignment="Top" Width="75" Click="CalculateButton_Click" TabIndex="6" IsTabStop="False"/>
+        <Label Content="J(): " HorizontalAlignment="Left" Margin="72,286,0,0" VerticalAlignment="Top"/>
+        <dxe:ListBoxEdit x:Name="UpdatedThetasList" HorizontalAlignment="Left" Height="181" Margin="213,312,0,0" VerticalAlignment="Top" Width="321" IsTabStop="False"/>
+        <Label Content="Theta0" HorizontalAlignment="Left" Margin="227,286,0,0" VerticalAlignment="Top" Width="51"/>
+        <Label Content="Theta1" HorizontalAlignment="Left" Margin="340,286,0,0" VerticalAlignment="Top" Width="50"/>
+
+    </Grid>
+</dx:DXWindow>
+
